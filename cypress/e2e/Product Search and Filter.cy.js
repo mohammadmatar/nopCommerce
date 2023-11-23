@@ -99,7 +99,7 @@ describe('Product Search and Filter', () => {
     
   })
 
-  it.only('Verify the search for a product that does not exist', () => {
+  it('Verify the search for a product that does not exist', () => {
     const searchquery = 'Aps';
     cy.get('#small-search-box-form').type(searchquery);
     cy.get('.search-box-button').click();
